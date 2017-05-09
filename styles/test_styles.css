@@ -1,5 +1,4 @@
-<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 div{
 	overflow: hidden;
@@ -9,13 +8,12 @@ body{
 	background-color: #F5F8FF;
 }
 
-p{
-	font-family: "Tangerine", serif;
+p,q{
+	font-family: 'Dancing Script', cursive;
 }
 
 .GB{
 	position: relative;
-
 }
 
 
@@ -81,7 +79,7 @@ p{
 }
 
 #content div > q{
-	
+
 	position: relative;
 	top: 200px;
 	font-size: 20px;
@@ -161,4 +159,16 @@ p{
 // 	position: relative;
 // }
 
+#thotBuble{
+	z-index: 5;
+	position: absolute;
+	left: 148px;
+}
+#thotBuble p{
+	position: absolute;
+	top: 35px;
+    left: 17px;
+    font-size: 17px;
+}
 
+}
