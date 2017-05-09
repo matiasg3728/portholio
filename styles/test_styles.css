@@ -1,0 +1,164 @@
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+
+
+div{
+	overflow: hidden;
+}
+
+body{
+	background-color: #F5F8FF;
+}
+
+p{
+	font-family: "Tangerine", serif;
+}
+
+.GB{
+	position: relative;
+
+}
+
+
+
+/*
+
+	We need to make the GB quote have a onClick that adds styles to top part and bottom part
+	the rest of the stuff should work rn. look at the top part and bottom part id stylings, we
+	just need to make them classes and add them to their respective elements
+
+
+
+*/
+
+
+
+.parts{
+
+	//visibility: hidden;
+	
+	background-image: url('../utils/imgs/marble.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+    position: fixed;
+    height: 50%;
+    width: 100vw;
+    z-index: 2;
+}
+
+#beginer{
+	position: absolute;
+	z-index: 3;
+	border-bottom: 1px solid black;
+	top: 240px;
+    left: 275px;
+
+
+}
+#beginer p{
+	font-size: 20px;
+}
+
+#content{
+    position: fixed;
+    padding-right: 25px;
+    padding-left: 25px;
+    top: 0;
+    height: 69%;
+    overflow: scroll;
+    margin-top: 13%;
+    width: 100%;
+
+}
+
+#content div{
+	height: 100%;
+	text-align: center;
+	//justify-content:center;
+}
+
+#content div > q{
+	
+	position: relative;
+	top: 200px;
+	font-size: 20px;
+}
+
+// #start_part{
+// 	overflow: hidden;
+// 	position: relative;
+// 	width: 100vw;
+// 	height: 100vh;
+// 	max-height: 100vh;
+// 	z-index: 2;
+// }
+
+#top_head{
+	top: 120px;
+}
+
+#bottom_head{
+
+	left:29px;
+}
+
+.bottom_part{
+	//bottom: -240px;
+	bottom: 0px;
+}
+
+
+
+.top_part{
+	//top: -240px; this is the value we want
+	top: 0px;
+}
+
+.hide{
+	width: 0;
+	height: 0;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.move_up{
+	-webkit-animation-name: moveup;
+	-webkit-animation-duration:2s;
+	top:-240px;
+}
+
+.move_down{
+	-webkit-animation-name: movedown;
+	-webkit-animation-duration:2s;
+	bottom:-240px;
+}
+
+@-webkit-keyframes moveup{
+	0% {top: 0px;}
+	25% {top: -60px;}
+	50% {top:-120px}
+	75% {top:-180px}
+	100% {top:-240px}
+}
+
+@-webkit-keyframes movedown{
+	0% {bottom: 0px;}
+	25% {bottom: -60px;}
+	50% {bottom:-120px}
+	75% {bottom:-180px}
+	100% {bottom:-240px}
+}
+
+// #intro_section{
+// 	position: relative;
+// }
+
+

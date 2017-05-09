@@ -12,9 +12,10 @@
 		todo:
 			-Add in a games nav dropdown with links to games
     -->
+    <div class="container row">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header page-scroll">
+            <div class="navbar-header page-scroll phone_nav">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -32,7 +33,7 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#resume">resume</a>
+                        <a class="page-scroll" href="./test.html">resume</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#projects">projects</a>
@@ -46,66 +47,56 @@
         </div>
         <!-- /.container -->
     </nav>
+    </div>
+
+    <!-- IMPORTANT, CHANGE THE HEIGHT MANUALLY WITH CSS OF ALL THE SECTIONS -->
 
     <!-- This will be our header portion
     	maybe we can put some cool banner or something and
     	a few inspirational quotes from off the top of my head 
     -->
-
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Lets make this our resume section.
 		We are going to need either an image or some
 		way we can show the file and either link it to 
 		google docs or have a file download
      -->
-    <section id="resume" class="about-section">
+
+
+
+    <section id="resume" class="content_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Resume</h1>
+                    <div class="c_content-responsive">
+                        <h1>About Me</h1>
+                        <p>
+                            I have been learning how to program since high school. If I have learned anything from my experiences programming, it is in order to keep up with the ever changing computer world you have to keep programming everyday. I want to take the next step in my career as a programmer and apply my skills in a real world environment. Regardless of where that next step will take me, I am excited to take it and see where I can go from there.
+                        </p>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+<!--  I have been programming since my junior year of high school.  At first I wasn't very impressed with it. I felt like it took too much work just to make simple program, but as the class moved forward and I started working on harder projects my feelings changed.  It was the first time in my life that something went from being work to being fun.  Even though I found programming fun, it wasn't until recently I realized that I love programming.  I want to get better at programming and everyday I am working on some project of mine but I feel like that will only take me so far.  I want to work in the field, I want to have deadlines, I want to work with other programmers so I can get better. -->
+
+
+
+
+
+
+
+
 
     <!-- This can be our projects section.
 		Lets put a carosel with our highlighted projects on rotation
      -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section
 		todo:
 			-Put contact links in-
      -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- These are the js files im using,
     	move them into the js folder -->
